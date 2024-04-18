@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --root-bg-color: #DADADA;
+}
+
+.dark {
+  --root-bg-color: #171717;
+}
+
+
+@layer base {
+
+
+  body {
+    @apply dark:text-[#dadada] text-[#171717] transition-all ease-in duration-200;
+  }
+
+}
+
+@layer utilities {
+  .animation-delay-4000 {
+    animation-delay: 19s;
+  }
+}
